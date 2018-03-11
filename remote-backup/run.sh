@@ -8,7 +8,7 @@ SSH_PORT=$(jq --raw-output ".ssh_port" $CONFIG_PATH)
 SSH_USER=$(jq --raw-output ".ssh_user" $CONFIG_PATH)
 SSH_KEY=$(jq --raw-output ".ssh_key[]" $CONFIG_PATH)
 REMOTE_DIRECTORY=$(jq --raw-output ".remote_directory" $CONFIG_PATH)
-ZIP_PASSWORD=$(jq --raw-output '.zip_password' $CONFIG_PATH)
+ZIP_PASSWORD=$(jq --raw-output ".zip_password" $CONFIG_PATH)
 
 # create variables
 SSH_ID="${HOME}/.ssh/id"
